@@ -44,7 +44,7 @@ namespace BackupFunc
         /// </summary>
         /// <param name="data_size"></param>
         /// <returns></returns>
-        public string h_read_setting(int data_size)
+        public string h_read_setting()
         {
             byte backward = 0;
             byte forward = 0;

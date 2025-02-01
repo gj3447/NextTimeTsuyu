@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace BackupFunc
 {
-    internal class WriteModuleLoadFileSystem
+    public class WriteModuleLoadFileSystem : WriteModule
     {
+        public WriteModuleLoadFileSystem(Backup bu) : base(bu)
+        {
+        }
     }
 }

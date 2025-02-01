@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CD\\C#\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj": {}
+    "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj": {}
   },
   "projects": {
-    "C:\\CD\\C#\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj": {
+    "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\CD\\C#\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj",
+        "projectUniqueName": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj",
         "projectName": "BackupFunc",
-        "projectPath": "C:\\CD\\C#\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj",
+        "projectPath": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj",
         "UsingMicrosoftNETSdk": false,
         "frameworks": {
           "net472": {
@@ -20,14 +20,14 @@
         "net472": {}
       }
     },
-    "C:\\CD\\C#\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj": {
+    "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CD\\C#\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj",
+        "projectUniqueName": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj",
         "projectName": "NextTimeTsuyu",
-        "projectPath": "C:\\CD\\C#\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj",
+        "projectPath": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj",
         "packagesPath": "C:\\Users\\gj344\\.nuget\\packages\\",
-        "outputPath": "C:\\CD\\C#\\NextTimeTsuyu\\NextTimeTsuyu\\obj\\",
+        "outputPath": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\NextTimeTsuyu\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
@@ -52,8 +52,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\CD\\C#\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj": {
-                "projectPath": "C:\\CD\\C#\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj"
+              "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj": {
+                "projectPath": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\BackupFunc\\BackupFunc.csproj"
               }
             }
           }

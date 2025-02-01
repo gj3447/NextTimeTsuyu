@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M53mV7nxAT8=",
+  "dgSpecHash": "0UNmG/Nqkh0=",
   "success": true,
-  "projectFilePath": "C:\\CD\\C#\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj",
+  "projectFilePath": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\NextTimeTsuyu\\NextTimeTsuyu.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages\\devexpress.charts\\24.2.3\\devexpress.charts.24.2.3.nupkg.sha512",
     "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages\\devexpress.charts.core\\24.2.3\\devexpress.charts.core.24.2.3.nupkg.sha512",

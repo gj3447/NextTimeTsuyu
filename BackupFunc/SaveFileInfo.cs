@@ -27,7 +27,31 @@ namespace BackupFunc
         }
         public SaveFileInfo(string path_)
         {
-            this.path = path_;
+            string[] split = path_.Split('|');
+            bool is_split = false;
+            if(split.Length ==3)
+            {
+                int temp_index_max;
+                int temp_index_remainder;
+                if (int.TryParse(split[1], out temp_index_max))
+                {
+                    is_split = true;
+                }
+                if (int.TryParse(split[1], out temp_index_remainder))
+                {
+                    is_split = true;
+                }
+                if(is_split)
+                {
+                    path = split[0];
+                    index_max = temp_index_max;
+                    index_remainder = temp_index_remainder;
+                }
+            }
+            if (!is_split)
+            {
+                this.path = path_;
+            }
         }
         public SaveFileInfo(string path_, int index_max_, int remainder_)
         {

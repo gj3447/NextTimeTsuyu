@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CD\\C#\\NextTimeTsuyu\\Debug\\Debug.csproj",
+      "projectUniqueName": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\Debug\\Debug.csproj",
       "projectName": "Debug",
-      "projectPath": "C:\\CD\\C#\\NextTimeTsuyu\\Debug\\Debug.csproj",
+      "projectPath": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\Debug\\Debug.csproj",
       "packagesPath": "C:\\Users\\gj344\\.nuget\\packages\\",
-      "outputPath": "C:\\CD\\C#\\NextTimeTsuyu\\Debug\\obj\\",
+      "outputPath": "C:\\CD\\C#\\NTT\\NextTimeTsuyu\\Debug\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",

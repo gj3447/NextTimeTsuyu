@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace BackupFunc
 {
-    internal class WriteModuleSaveAllChunk
+    public class WriteModuleSaveAllChunk : WriteModule
     {
+        public WriteModuleSaveAllChunk(Backup bu) : base(bu)
+        {
+        }
     }
 }
