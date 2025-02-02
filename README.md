@@ -1,26 +1,27 @@
 TASK
 
-비동기 BackUp 라이브러리
-Chunk 단위 I/O 기능구현
-필요 Setting 목록 구현
-File, Chunk, AllChunk 에 대한 ModuleCluster
-ReadModule    - V
-WriteModule   - V
-SettingModule - V
-SearchModule  - V
-MemoryCluster 구조 구현
-SearchDictionaryQueue,ChunkQueue,SettingSaveQueue,ReadFileQueue,WriteFileDic,ReadSetting,WriteSetting
-LoadBalancer Basic Seq 로 테스트
-
-JsonDB 모듈
-
-Winform 으로 먼저 기본 기능테스트 후
-DevExpress 로 따로 개발
-
-NextTime Angular.js
-
-
-Next Time Tsuyu
+비동기 BackUp 라이브러리  
+Chunk 단위 I/O 기능구현  
+필요 Setting 목록 구현  
+File, Chunk, AllChunk 에 대한 ModuleCluster  
+ReadModule    - V  
+WriteModule   - V  
+SettingModule - V  
+SearchModule  - V  
+MemoryCluster 구조 구현  
+SearchDictionaryQueue,ChunkQueue,SettingSaveQueue,ReadFileQueue,WriteFileDic,ReadSetting,WriteSetting  
+LoadBalancer Basic Seq 로 테스트  
+  
+JsonDB 모듈  
+  
+Winform 으로 먼저 기본 기능테스트 후  
+DevExpress 로 따로 개발  
+  
+NextTime Angular.js  
+  
+System BluePrint
+![설명](https://user-images.githubusercontent.com/사용자ID/이미지파일명.png)
+Next Time Tsuyu  
 
 **Tsuyu**
 
