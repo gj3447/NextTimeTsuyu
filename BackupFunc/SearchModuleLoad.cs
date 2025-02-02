@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BackupFunc
 {
-    internal class SerachModuleLoad : SearchModule
+    internal class SearchModuleLoad : SearchModule
     {
-        public SerachModuleLoad(Backup bu) : base(bu)
+        public SearchModuleLoad(Backup bu) : base(bu)
         { }
         public override Action get_work()
         {

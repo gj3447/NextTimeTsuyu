@@ -68,7 +68,7 @@
     <Compile Include="SaveFileInfo.cs" />
     <Compile Include="SearchModule.cs" />
     <Compile Include="SearchModuleSave.cs" />
-    <Compile Include="SerachModuleLoad.cs" />
+    <Compile Include="SearchModuleLoad.cs" />
     <Compile Include="Setting.cs" />
     <Compile Include="SettingModule.cs" />
     <Compile Include="SettingModuleLoad.cs" />

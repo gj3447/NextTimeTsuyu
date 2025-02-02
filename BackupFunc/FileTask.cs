@@ -64,6 +64,30 @@ namespace BackupFunc
             is_end = false;
             index = 0;
         }
+        public static WORKABLE_STATE filetask_state2workable_state(FILETASK_STATE fs)
+        {
+            switch (fs)
+            {
+                case FILETASK_STATE.WAITING: return WORKABLE_STATE.WATING;
+                case FILETASK_STATE.START: return WORKABLE_STATE.START;
+                case FILETASK_STATE.WORKING: return WORKABLE_STATE.WORKING;
+                case FILETASK_STATE.STOP: return WORKABLE_STATE.STOP;
+                case FILETASK_STATE.END: return WORKABLE_STATE.END;
+                default: return WORKABLE_STATE.END;
+            }
+        }
+        public static FILETASK_STATE workable_state2filetask_state(WORKABLE_STATE ws)
+        {
+            switch (ws)
+            {
+                case WORKABLE_STATE.WATING: return FILETASK_STATE.WAITING;
+                case WORKABLE_STATE.START: return FILETASK_STATE.START;
+                case WORKABLE_STATE.WORKING: return FILETASK_STATE.WORKING;
+                case WORKABLE_STATE.STOP: return FILETASK_STATE.STOP;
+                case WORKABLE_STATE.END: return FILETASK_STATE.END;
+                default: return FILETASK_STATE.END;
+            }
+        }
     }
     public enum FILETASK_STATE
     {

@@ -174,5 +174,9 @@ namespace BackupFunc
             stream = new FileStream(full_path, FileMode.Open, FileAccess.Read);
             index = 0;
         }
+        public FileTaskRead(string file_full_path, Backup bu) :base()
+        {
+
+        }
     }
 }

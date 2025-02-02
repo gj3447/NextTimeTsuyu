@@ -7,6 +7,9 @@ using System.IO;
 using System.Reflection;
 namespace BackupFunc
 {
+    /// <summary>
+    /// Chunk => 
+    /// </summary>
     public class FileTaskWrite : FileTask
     {
         bool written = false;

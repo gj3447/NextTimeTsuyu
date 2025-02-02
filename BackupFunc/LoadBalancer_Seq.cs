@@ -8,5 +8,8 @@ namespace BackupFunc
 {
     public class LoadBalancer_Seq : LoadBalancer
     {
+        public LoadBalancer_Seq(Backup backup) : base(backup)
+        {
+        }
     }
 }

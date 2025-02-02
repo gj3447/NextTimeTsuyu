@@ -8,5 +8,8 @@ namespace BackupFunc
 {
     public class LoadBalancer_AllRand : LoadBalancer
     {
+        public LoadBalancer_AllRand(Backup backup) : base(backup)
+        {
+        }
     }
 }

@@ -25,30 +25,58 @@ namespace BackupFunc
         public MemoryCluster get_memory_cluster => n_memory_cluster;
         public LoadBalancer get_load_balancer => n_load_balancer;
         #endregion
-        
-        public static void h_save(string from_path, string to_path, int worker_count,
+
+        public static void h_save(string from_path, string to_path, int worker_count, LOADBALANCER_TYPE lbt,
                                   int chunk_size, STRUCT_TYPE struct_type)
         {
             MODE mode = MODE.SAVE;
-            Setting setting = new Setting
-                (from_path,to_path,worker_count,mode,chunk_size,struct_type);
-            Backup backup = new Backup(setting);
-
+            Backup backup = new Backup();
+            Setting setting = new Setting (from_path,to_path,worker_count,mode,chunk_size,struct_type);
+            ModuleCluster module_cluster = new ModuleCluster(backup, setting);
+            MemoryCluster memory_cluster = new MemoryCluster(backup, setting);
+            LoadBalancer loadbalancer = LoadBalancer.h_create_load_balancer(backup ,lbt);
+            backup.h_set_worker(loadbalancer, worker_count);
         }
-        public static void h_load(string from_path,string to_path, int worker_count,
+        public static void h_load(string from_path,string to_path, int worker_count, LOADBALANCER_TYPE lbt,
                                   int chunk_size, STRUCT_TYPE struct_type)
         {
             MODE mode = MODE.LOAD;
-            Setting setting = new Setting
-                (from_path,to_path,worker_count,mode,chunk_size,struct_type);
+            Backup backup = new Backup();
+            Setting setting = new Setting (from_path,to_path,worker_count,mode,chunk_size,struct_type);
+            ModuleCluster module_cluster = new ModuleCluster(backup, setting);
+            MemoryCluster memory_cluster = new MemoryCluster(backup, setting);
+            LoadBalancer loadbalancer = LoadBalancer.h_create_load_balancer(backup, lbt);
+            backup.h_set_worker(loadbalancer, worker_count);
         }
-        public static void h_load(string from_path, string to_path ,int worker_count)
+        public static void h_load(string from_path, string to_path ,int worker_count, LOADBALANCER_TYPE lbt)
         {
             MODE mode = MODE.LOAD;
-            Setting setting = new Setting
-                (from_path, to_path, worker_count, mode, -1, STRUCT_TYPE.NULL);
+            Backup backup = new Backup();
+            Setting setting = new Setting (from_path, to_path, worker_count, mode, -1, STRUCT_TYPE.NULL);
+            ModuleCluster module_cluster = new ModuleCluster(backup ,setting);
+            MemoryCluster memory_cluster = new MemoryCluster(backup, setting);
+            LoadBalancer loadbalancer = LoadBalancer.h_create_load_balancer(backup, lbt);
+            backup.h_set_worker(loadbalancer, worker_count);
         }
-        public Backup(Setting setting)
+        public List<Task> h_set_worker(LoadBalancer load_balancer , int worker_count)
+        {
+            if(worker_count<1)
+            {
+                throw new Exception("why worker count is not exists...");
+            }
+            List<Task> tasks = new List<Task>();
+            for(int i = 0;i< worker_count; i++)
+            {
+                Task task = new Task(load_balancer.h_work());
+                tasks.Add(task);
+            }
+            return tasks;
+        }
+        public void h_start()
+        {
+
+        }
+        private Backup()
         {
         }
         public void h_work()

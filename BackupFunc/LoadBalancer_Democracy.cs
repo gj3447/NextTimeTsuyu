@@ -8,5 +8,8 @@ namespace BackupFunc
 {
     public class LoadBalancer_Democracy : LoadBalancer
     {
+        public LoadBalancer_Democracy(Backup backup) : base(backup)
+        {
+        }
     }
 }

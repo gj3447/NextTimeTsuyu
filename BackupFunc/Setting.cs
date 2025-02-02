@@ -23,6 +23,7 @@ namespace BackupFunc
         protected int         chunk_size;
         protected STRUCT_TYPE struct_type;
 
+        private object n_lock_init_module;
         #endregion
 
         #region Dictionary List
@@ -39,23 +40,20 @@ namespace BackupFunc
         public MODE get_mode => mode;
         public ConcurrentDictionary<string, SaveFileInfo> get_save_file_dic => n_save_file_dic;
         public ConcurrentDictionary<string, SaveDirectoryInfo> get_save_directory_dic => n_save_directory_dic;
-
-        public bool is_save_field_load
+        public object get_lock_init_module
+        { get { return n_lock_init_module; } }
+        public bool is_init_type_all
         {
             get
             {
-                if (worker_count < 0) return false;
+                if (chunk_size < 1) return false;
                 if (struct_type == STRUCT_TYPE.NULL) return false;
                 return true;
             }
         }
-
         #endregion
 
         #region Func
-      
-
-
         public SaveDirectoryInfo get_save_directory(string key)
         {
             SaveDirectoryInfo result = null;
@@ -74,31 +72,15 @@ namespace BackupFunc
             if (sfi == null)
                 return -1;
             else if(sfi.get_index_max < index)
-            {
                 throw new Exception("save file index out of range!");
-            }
-            else if (sfi.get_index_max<index)
-            {
+            else if (sfi.get_index_max > index)
                 return get_chunk_size;
-            }
             else if (sfi.get_index_max == index)
-            {
                 return sfi.get_index_remainer;
-            }
-            return -1;
+            throw new Exception("why not filtering?");
         }
-        public bool add_save_directory(string path)
-        {
-            if (n_save_directory_dic.ContainsKey(path))
-                return false;
-            return n_save_directory_dic.TryAdd(path,new SaveDirectoryInfo(path));
-        }
-        public bool add_save_file(string path)
-        {
-            if (n_save_file_dic.ContainsKey(path))
-                return false;
-            return n_save_file_dic.TryAdd(path, new SaveFileInfo(path));
-        }
+        public bool add_save_directory(string path) { return n_save_directory_dic.TryAdd(path,new SaveDirectoryInfo(path));}
+        public bool add_save_file     (string path) { return n_save_file_dic.TryAdd(path, new SaveFileInfo(path));}
 
         public string h_field2string()
         {

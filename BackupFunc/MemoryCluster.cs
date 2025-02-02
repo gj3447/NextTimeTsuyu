@@ -97,9 +97,25 @@ namespace BackupFunc
         }
         #endregion
 
-        public MemoryCluster(Setting setting)
+        public MemoryCluster(Backup backup ,Setting setting)
         {
 
+            n_search_directory_queue = new ConcurrentQueue<DirectoryInfo>();
+            n_chunk_queue = new ConcurrentQueue<Chunk>();
+            n_setting_save_queue = new ConcurrentQueue<string>();
+
+            n_read_file_queue = new ConcurrentQueue<FileTaskRead>();
+            n_write_file_dic = new ConcurrentDictionary<string, FileTaskWrite>();
+
+            string setting_file_path = Path.Combine(setting.get_from_path, Setting.setting_file_name);
+            if (backup.get_setting.get_mode == MODE.SAVE)
+            {
+                n_read_setting = new FileTaskRead(setting_file_path, backup);
+            }
+            if (backup.get_setting.get_mode == MODE.LOAD)
+            {
+
+            }
         }
     }
 }
