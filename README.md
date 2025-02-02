@@ -1,28 +1,52 @@
+TASK
+
+비동기 BackUp 라이브러리
+Chunk 단위 I/O 기능구현
+필요 Setting 목록 구현
+File, Chunk, AllChunk 에 대한 ModuleCluster
+ReadModule    - V
+WriteModule   - V
+SettingModule - V
+SearchModule  - V
+MemoryCluster 구조 구현
+SearchDictionaryQueue,ChunkQueue,SettingSaveQueue,ReadFileQueue,WriteFileDic,ReadSetting,WriteSetting
+LoadBalancer Basic Seq 로 테스트
+
+JsonDB 모듈
+
+Winform 으로 먼저 기본 기능테스트 후
+DevExpress 로 따로 개발
+
+NextTime Angular.js
+
+
+Next Time Tsuyu
+
 **Tsuyu**
 
-In the quiet dawn, my knife whispers to the fish.
 고요한 새벽, 내 칼은 생선에게 속삭이네.
+In the quiet dawn, my knife whispers to the fish.
 
-The rice, warm as a mother’s hand, cradles the sea’s gift.
 어머니 손길처럼 따뜻한 쌀이 바다의 선물을 감싸네.
+The rice, warm as a mother’s hand, cradles the sea’s gift.
 
-Steam rises, carrying the soul of a hundred grains.
 김이 피어나며, 백 개의 쌀알이 영혼을 나누네.
+Steam rises, carrying the soul of a hundred grains.
 
-Soy sauce, aged with time, sings the song of patience.
 세월이 익힌 간장은 인내의 노래를 부르네.
+Soy sauce, aged with time, sings the song of patience.
 
-A single cut, a lifetime of practice in its edge.
 한 번의 칼질에 평생의 연마가 담겨 있네.
+A single cut, a lifetime of practice in its edge.
 
-The dish before you is not just food, but a story.
 그대 앞의 요리는 단순한 음식이 아닌, 하나의 이야기.
+The dish before you is not just food, but a story.
 
-With each bite, you taste my devotion, my art.
 한 입에 담긴 나의 헌신, 나의 예술을 느끼기를.
+With each bite, you taste my devotion, my art.
 
-Even after I am gone, my flavors will remain.
 내가 떠난 후에도, 내 맛은 남으리라.
+Even after I am gone, my flavors will remain.
 
 **NextTime**
 
