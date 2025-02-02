@@ -20,7 +20,7 @@ DevExpress 로 따로 개발
 NextTime Angular.js  
   
 System BluePrint  
-![blueprint]([https://user-images.githubusercontent.com/사용자ID/이미지파일명.png](https://github.com/gj3447/NextTimeTsuyu.git/NextTimeTsuyuSystemBluePrint.png))
+![blueprint](https://github.com/gj3447/NextTimeTsuyu/blob/master/NextTimeTsuyuSystemBluePrint.png)
 Next Time Tsuyu  
 
 **Tsuyu**
